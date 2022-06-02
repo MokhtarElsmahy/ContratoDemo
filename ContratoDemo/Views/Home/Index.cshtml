@@ -1,0 +1,91 @@
+﻿@model ContratoDemo.ViewModels.FormViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Contrato Demo For Payment Transaction</a>.</p>
+</div>
+
+<div class="container">
+    <form method="post">
+
+
+        <div class="row">
+
+
+            <div class="col-6" style="border:3px solid green;">
+                <div class="row" style="background-color:aqua">
+                    <h3>Product Information</h3>
+                </div>
+                <div class="mt-3">
+                    <div class="mb-3 row">
+                        <label for="ProductName" class="col-sm-2 col-form-label">Product</label>
+                        <div class="col-sm-10">
+                            <input type="text" required class="form-control" id="ProductName" name="ProductName" placeholder="Samsung Galaxy A1">
+
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="Quantity" class="col-sm-2 col-form-label">Quantity</label>
+                        <div class="col-sm-10">
+                            <input type="number" required class="form-control" id="Quantity" name="Quantity" placeholder="Samsung Galaxy A1">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="Price" class="col-sm-2 col-form-label">Item Price</label>
+                        <div class="col-sm-10">
+                            <input type="number" required class="form-control" id="Price" name="Price">
+                        </div>
+                    </div>
+
+                    @*  <div class="mt-4 row">
+                    <input type="submit" class="btn btn-primary" />
+                    </div>*@
+
+                </div>
+            </div>
+            <div class="col-6" style="border:3px solid green;">
+
+                <div class="row" style="background-color:aqua">
+                    <h3>Customer Information</h3>
+                </div>
+
+                <div class="mt-3">
+                    <div class="mb-3 row">
+                        <label for="first_name" class="col-sm-2 col-form-label">First Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" required class="form-control" id="first_name" name="first_name" placeholder="Mokhtar">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="last_name" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="text" required class="form-control" id="last_name" name="last_name" placeholder="Elsmahy">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" required class="form-control" id="email" name="email" placeholder="ali@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3 row">
+                        <label for="phone_number" class="col-sm-2 col-form-label">Phone</label>
+                        <div class="col-sm-10">
+                            <input type="text" required class="form-control" id="phone_number" name="phone_number" placeholder="01091258658">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="mt-4 row">
+                <input type="submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>
